@@ -6,7 +6,6 @@
 <title>Cougle Property Care | Fredericton Lawn Care</title>
 
 <style>
-
 body{
   margin:0;
   font-family:Arial, Helvetica, sans-serif;
@@ -14,40 +13,52 @@ body{
   color:#222;
 }
 
+h1,h2,h3{
+  margin-top:0;
+}
+
+p{
+  line-height:1.6;
+}
+
 /* HEADER */
 
 header{
-  background:#111111;
+  background:#000000;
   color:white;
-  padding:90px 20px;
   text-align:center;
+  padding:45px 20px 60px 20px;
 }
 
 .logo{
-  width:260px;
-  margin-bottom:25px;
+  width:310px;
+  max-width:90%;
+  display:block;
+  margin:25px auto 18px auto;
 }
 
-h1{
+header h1{
   margin:0;
-  font-size:56px;
+  font-size:64px;
   color:#39e600;
 }
 
 .hero-sub{
-  font-size:20px;
-  margin-top:15px;
-  margin-bottom:30px;
+  font-size:22px;
+  margin-top:16px;
+  margin-bottom:28px;
+  color:#f0f0f0;
 }
 
 /* NAV */
 
 nav{
-  background:#000;
-  padding:14px;
+  background:#111;
+  padding:16px;
   text-align:center;
   position:sticky;
   top:0;
+  z-index:1000;
 }
 
 nav a{
@@ -55,6 +66,7 @@ nav a{
   margin:0 18px;
   text-decoration:none;
   font-weight:bold;
+  font-size:18px;
 }
 
 /* BUTTONS */
@@ -82,16 +94,21 @@ nav a{
   color:white;
 }
 
-/* SECTIONS */
+/* GENERAL SECTIONS */
 
 section{
-  max-width:1100px;
+  max-width:1200px;
   margin:auto;
-  padding:70px 20px;
+  padding:75px 20px;
 }
 
 .section-alt{
   background:#f6f7f6;
+}
+
+.section-title{
+  font-size:44px;
+  margin-bottom:20px;
 }
 
 /* SERVICES */
@@ -105,8 +122,46 @@ section{
 .card{
   background:white;
   padding:30px;
-  border-radius:10px;
+  border-radius:12px;
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* WHY CHOOSE US */
+
+.why-grid{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:30px;
+  align-items:center;
+}
+
+.why-box{
+  background:#0f5a26;
+  color:white;
+  padding:40px;
+  border-radius:14px;
+}
+
+.why-box h2{
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.why-box ul{
+  margin:0;
+  padding-left:22px;
+}
+
+.why-box li{
+  margin-bottom:12px;
+  font-size:22px;
+}
+
+.why-image img{
+  width:100%;
+  border-radius:14px;
+  display:block;
+  box-shadow:0 10px 24px rgba(0,0,0,0.12);
 }
 
 /* GALLERY */
@@ -117,15 +172,52 @@ section{
   gap:25px;
 }
 
+.gallery-card{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
 .gallery img{
   width:100%;
-  border-radius:10px;
+  height:280px;
+  object-fit:cover;
+  display:block;
 }
 
 .gallery-label{
   text-align:center;
   font-weight:bold;
-  margin-top:10px;
+  font-size:20px;
+  padding:16px;
+  margin:0;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.testimonial-card{
+  background:white;
+  padding:28px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.stars{
+  color:#39e600;
+  font-size:22px;
+  margin-bottom:14px;
+}
+
+.reviewer{
+  font-weight:bold;
+  margin-top:16px;
 }
 
 /* CTA */
@@ -134,17 +226,22 @@ section{
   background:#0f3a1f;
   color:white;
   text-align:center;
-  padding:70px 20px;
+  padding:75px 20px;
+}
+
+.cta h2{
+  font-size:48px;
+  margin-bottom:12px;
 }
 
 /* CONTACT */
 
 .contact-box{
   background:white;
-  padding:30px;
-  border-radius:10px;
+  padding:32px;
+  border-radius:12px;
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  max-width:600px;
+  max-width:700px;
 }
 
 /* FOOTER */
@@ -154,169 +251,231 @@ footer{
   color:white;
   text-align:center;
   padding:35px;
+  font-size:18px;
 }
 
+@media (max-width: 900px){
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .why-box h2{
+    font-size:38px;
+  }
+
+  header h1{
+    font-size:48px;
+  }
+
+  .hero-sub{
+    font-size:18px;
+  }
+
+  .section-title{
+    font-size:36px;
+  }
+
+  .cta h2{
+    font-size:38px;
+  }
+}
+
+@media (max-width: 600px){
+  nav a{
+    display:inline-block;
+    margin:8px 10px;
+    font-size:16px;
+  }
+
+  .logo{
+    width:240px;
+  }
+
+  header h1{
+    font-size:40px;
+  }
+}
 </style>
 
 </head>
-
 <body>
 
 <header>
+  <img src="logo.png" class="logo" alt="Cougle Property Care Logo">
 
-<img src="logo.png" class="logo" alt="Cougle Property Care Logo">
+  <h1>Cougle Property Care</h1>
+  <p class="hero-sub">Professional Lawn Care & Property Maintenance in Fredericton</p>
 
-<h1>Cougle Property Care</h1>
-<p class="hero-sub">Professional Lawn Care & Property Maintenance in Fredericton</p>
+  <div class="hero-buttons">
+    <a href="tel:15062929990">
+      <button class="hero-btn">Call Now</button>
+    </a>
 
-<div class="hero-buttons">
-
-<a href="tel:15062929990">
-<button class="hero-btn">Call Now</button>
-</a>
-
-<a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
-<button class="hero-btn hero-btn-dark">Text for a Quote</button>
-</a>
-
-</div>
-
+    <a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
+      <button class="hero-btn hero-btn-dark">Text for a Quote</button>
+    </a>
+  </div>
 </header>
 
 <nav>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+  <a href="#services">Services</a>
+  <a href="#why-us">Why Choose Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <section id="services">
+  <h2 class="section-title">Our Services</h2>
 
-<h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Lawn Mowing</h3>
+      <p>Reliable weekly or bi-weekly mowing to keep your property looking clean and well maintained.</p>
+    </div>
 
-<div class="services">
+    <div class="card">
+      <h3>Overseeding</h3>
+      <p>Improve lawn thickness and repair thin or damaged areas with professional overseeding.</p>
+    </div>
 
-<div class="card">
-<h3>Lawn Mowing</h3>
-<p>Reliable weekly or bi-weekly mowing to keep your property looking clean and well maintained.</p>
-</div>
+    <div class="card">
+      <h3>Fertilizer & Lime Application</h3>
+      <p>Programs focused on lawn health, stronger root systems, and improved soil conditions.</p>
+    </div>
 
-<div class="card">
-<h3>Overseeding</h3>
-<p>Improve lawn thickness and repair thin or damaged areas with professional overseeding.</p>
-</div>
+    <div class="card">
+      <h3>Compost Top Dressing</h3>
+      <p>Organic soil improvement that increases moisture retention and lawn vitality.</p>
+    </div>
 
-<div class="card">
-<h3>Fertilizer & Lime Application</h3>
-<p>Programs focused on lawn health, stronger root systems, and improved soil conditions.</p>
-</div>
+    <div class="card">
+      <h3>Spring & Fall Cleanup</h3>
+      <p>Seasonal cleanups including leaves, debris removal, and property preparation.</p>
+    </div>
 
-<div class="card">
-<h3>Compost Top Dressing</h3>
-<p>Organic soil improvement that increases moisture retention and lawn vitality.</p>
-</div>
+    <div class="card">
+      <h3>Brush & Junk Removal</h3>
+      <p>Removal of brush, debris piles, and unwanted materials from your property.</p>
+    </div>
 
-<div class="card">
-<h3>Spring & Fall Cleanup</h3>
-<p>Seasonal cleanups including leaves, debris removal, and property preparation.</p>
-</div>
-
-<div class="card">
-<h3>Brush & Junk Removal</h3>
-<p>Removal of brush, debris piles, and unwanted materials from your property.</p>
-</div>
-
-<div class="card">
-<h3>Tree Cleanup</h3>
-<p>Cleanup and trimming of smaller trees and branches around the property.</p>
-</div>
-
-</div>
-
+    <div class="card">
+      <h3>Tree Cleanup</h3>
+      <p>Cleanup and trimming of smaller trees and branches around the property.</p>
+    </div>
+  </div>
 </section>
 
-<section id="about" class="section-alt">
+<section id="why-us" class="section-alt">
+  <div class="why-grid">
+    <div class="why-box">
+      <h2>Why Choose Us</h2>
+      <ul>
+        <li>Reliable communication</li>
+        <li>Fast quotes by call or text</li>
+        <li>Professional lawn health services</li>
+        <li>Consistent, high-quality work</li>
+        <li>Clean, well-kept finished results</li>
+        <li>Serving Fredericton and surrounding areas</li>
+        <li>Focused on homeowner satisfaction</li>
+        <li>Growing local company that values every client</li>
+      </ul>
+    </div>
 
-<h2>About Cougle Property Care</h2>
-
-<p>
-Cougle Property Care is a Fredericton-based lawn care company focused on helping homeowners maintain clean, healthy, and well-kept properties. Founded in 2022, the company has grown quickly by providing reliable service, clear communication, and visible results.
-</p>
-
-<p>
-Our team focuses heavily on lawn health services such as overseeding, fertilization, liming, and compost top dressing to help properties look better and stay healthier throughout the season. Whether it's weekly mowing, seasonal cleanups, or improving lawn health, our goal is to deliver professional service that homeowners can depend on.
-</p>
-
-<p>
-We proudly serve Fredericton and surrounding communities.
-</p>
-
+    <div class="why-image">
+      <img src="lawn.jpg" alt="Freshly cut lawn">
+    </div>
+  </div>
 </section>
 
-<section id="gallery">
+<section id="about">
+  <h2 class="section-title">About Cougle Property Care</h2>
 
-<h2>Recent Work</h2>
+  <p>
+    Cougle Property Care is a Fredericton-based lawn care company focused on helping homeowners maintain clean, healthy, and well-kept properties. Founded in 2022, the company has grown quickly by providing reliable service, clear communication, and visible results.
+  </p>
 
-<div class="gallery">
+  <p>
+    Our team focuses heavily on lawn health services such as overseeding, fertilization, liming, and compost top dressing to help properties look better and stay healthier throughout the season. Whether it’s weekly mowing, seasonal cleanups, or improving lawn health, our goal is to deliver professional service that homeowners can depend on.
+  </p>
 
-<div>
-<img src="before.jpg">
-<p class="gallery-label">Before</p>
-</div>
+  <p>
+    We proudly serve Fredericton and surrounding communities.
+  </p>
+</section>
 
-<div>
-<img src="after.jpg">
-<p class="gallery-label">After</p>
-</div>
+<section id="gallery" class="section-alt">
+  <h2 class="section-title">Recent Work</h2>
 
-<div>
-<img src="lawn.jpg">
-<p class="gallery-label">Finished Lawn</p>
-</div>
+  <div class="gallery">
+    <div class="gallery-card">
+      <img src="before.jpg" alt="Overgrown property before cleanup">
+      <p class="gallery-label">Before</p>
+    </div>
 
-</div>
+    <div class="gallery-card">
+      <img src="after.jpg" alt="Property after cleanup">
+      <p class="gallery-label">After</p>
+    </div>
 
+    <div class="gallery-card">
+      <img src="lawn.jpg" alt="Freshly cut lawn">
+      <p class="gallery-label">Finished Lawn</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">What Clients Say</h2>
+
+  <div class="testimonials">
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Jacob and his crew did an excellent job. The property looked completely different when they were done. Very professional and easy to deal with.</p>
+      <p class="reviewer">Google Review</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Fast response, great communication, and the lawn looked amazing after the work was finished. Highly recommend.</p>
+      <p class="reviewer">Google Review</p>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Reliable service and quality work. They showed up when they said they would and the results were exactly what we wanted.</p>
+      <p class="reviewer">Google Review</p>
+    </div>
+  </div>
 </section>
 
 <div class="cta">
+  <h2>Get a Quote Today</h2>
+  <p>Call or text us with your address and the service you’re looking for.</p>
 
-<h2>Get a Quote Today</h2>
-<p>Call or text us with your address and the service you're looking for.</p>
+  <div class="hero-buttons">
+    <a href="tel:15062929990">
+      <button class="hero-btn">Call Now</button>
+    </a>
 
-<div class="hero-buttons">
-
-<a href="tel:15062929990">
-<button class="hero-btn">Call Now</button>
-</a>
-
-<a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
-<button class="hero-btn hero-btn-dark">Text for a Quote</button>
-</a>
-
-</div>
-
+    <a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
+      <button class="hero-btn hero-btn-dark">Text for a Quote</button>
+    </a>
+  </div>
 </div>
 
 <section id="contact" class="section-alt">
+  <h2 class="section-title">Contact</h2>
 
-<h2>Contact</h2>
-
-<div class="contact-box">
-
-<p><strong>Phone:</strong> (506) 292-9990</p>
-<p><strong>Email:</strong> Couglepropertycare@gmail.com</p>
-<p><strong>Service Area:</strong> Fredericton and surrounding areas</p>
-
-<p>
-Text us your address and a short description of the work for a fast quote.
-</p>
-
-</div>
-
+  <div class="contact-box">
+    <p><strong>Phone:</strong> (506) 292-9990</p>
+    <p><strong>Email:</strong> Couglepropertycare@gmail.com</p>
+    <p><strong>Service Area:</strong> Fredericton and surrounding areas</p>
+  </div>
 </section>
 
 <footer>
-<p>© Cougle Property Care 2026</p>
+  <p>© Cougle Property Care 2026</p>
 </footer>
 
 </body>
