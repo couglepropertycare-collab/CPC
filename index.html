@@ -1,42 +1,91 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<title>Cougle Property Care</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cougle Property Care | Fredericton Lawn Care</title>
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5;color:#222}
-header{background:#2f7a3e;color:white;padding:40px;text-align:center}
-section{max-width:900px;margin:auto;padding:40px}
-button{background:#2f7a3e;color:white;border:none;padding:12px 20px;font-size:16px;border-radius:6px}
-.service{background:white;padding:20px;margin:10px 0;border-radius:8px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f5f5;color:#222}
+header{background:#0e3b1d;color:white;padding:60px 20px;text-align:center}
+h1{margin:0;font-size:42px}
+nav{background:#111;padding:12px;text-align:center}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:auto;padding:60px 20px}
+.hero-btn{background:#2f7a3e;color:white;border:none;padding:14px 26px;font-size:18px;border-radius:6px;margin-top:20px;cursor:pointer}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:white;padding:25px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.gallery img{width:100%;border-radius:8px}
+.cta{background:#2f7a3e;color:white;text-align:center;padding:60px 20px}
+footer{background:#111;color:white;text-align:center;padding:30px}
+.contact-box{background:white;padding:25px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,0.1);max-width:500px}
 </style>
 </head>
-
 <body>
 
 <header>
 <h1>Cougle Property Care</h1>
-<p>Lawn Care Services in Fredericton</p>
-<a href="tel:15062629990"><button>Call for a Quote</button></a>
+<p>Professional Lawn Care & Property Maintenance in Fredericton</p>
+<a href="tel:15062929990"><button class="hero-btn">Call or Text for a Quote</button></a>
 </header>
 
-<section>
-<h2>Services</h2>
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<div class="service">Lawn Mowing</div>
-<div class="service">Overseeding</div>
-<div class="service">Compost Top Dressing</div>
-<div class="service">Spring & Fall Cleanup</div>
-
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card"><h3>Lawn Mowing</h3><p>Reliable weekly or bi‑weekly mowing services to keep your property looking clean and well maintained.</p></div>
+<div class="card"><h3>Overseeding</h3><p>Improve lawn thickness and repair thin or damaged areas with professional overseeding.</p></div>
+<div class="card"><h3>Fertilizer & Lime Application</h3><p>Programs focused on lawn health, stronger root systems, and improved soil conditions.</p></div>
+<div class="card"><h3>Compost Top Dressing</h3><p>Organic soil improvement that increases moisture retention and lawn vitality.</p></div>
+<div class="card"><h3>Spring & Fall Cleanup</h3><p>Seasonal cleanups including leaves, debris removal, and property preparation.</p></div>
+<div class="card"><h3>Brush & Junk Removal</h3><p>Removal of yard debris, brush piles, and unwanted materials from your property.</p></div>
+<div class="card"><h3>Tree Cleanup</h3><p>Cleanup of smaller trees, branches, and trimming work around the property.</p></div>
+</div>
 </section>
 
-<section>
+<section id="about">
+<h2>About Cougle Property Care</h2>
+<p>Cougle Property Care is a Fredericton‑based lawn care company focused on helping homeowners maintain clean, healthy, and well‑kept properties. Founded in 2022, the company has grown quickly by providing reliable service, clear communication, and visible results.</p>
+
+<p>Our team focuses heavily on lawn health services such as overseeding, fertilization, liming, and compost top dressing to help properties look better and stay healthier throughout the season. Whether it's weekly mowing, seasonal cleanups, or improving lawn health, our goal is to deliver professional service that homeowners can depend on.</p>
+
+<p>We proudly serve Fredericton and surrounding communities.</p>
+</section>
+
+<section id="gallery">
+<h2>Recent Work</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/600x400" alt="before after lawn">
+<img src="https://via.placeholder.com/600x400" alt="yard cleanup">
+<img src="https://via.placeholder.com/600x400" alt="lawn mowing">
+</div>
+</section>
+
+<div class="cta">
+<h2>Get a Quote Today</h2>
+<p>Call or text us with your address and the service you're looking for.</p>
+<a href="tel:15062929990"><button class="hero-btn">Call (506) 292‑9990</button></a>
+</div>
+
+<section id="contact">
 <h2>Contact</h2>
-<p>Phone: (506) 262-9990</p>
-<p>Email: Jakecougle99@gmail.com</p>
-<p>Fredericton, New Brunswick</p>
+<div class="contact-box">
+<p><strong>Phone:</strong> (506) 292‑9990</p>
+<p><strong>Email:</strong> Couglepropertycare@gmail.com</p>
+<p><strong>Service Area:</strong> Fredericton and surrounding areas</p>
+<p>Text us your address and a short description of the work for a fast quote.</p>
+</div>
 </section>
+
+<footer>
+<p>© Cougle Property Care 2026</p>
+</footer>
 
 </body>
 </html>
