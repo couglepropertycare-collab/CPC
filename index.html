@@ -4,47 +4,85 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cougle Property Care | Fredericton Lawn Care</title>
+
 <style>
+
 body{
   margin:0;
   font-family:Arial, Helvetica, sans-serif;
   background:#ffffff;
-  color:#222222;
+  color:#222;
 }
 
+/* HEADER */
+
 header{
-  background:#ffffff;
-  color:#222222;
-  padding:80px 20px;
+  background:#111111;
+  color:white;
+  padding:90px 20px;
   text-align:center;
-  border-bottom:1px solid #e5e5e5;
+}
+
+.logo{
+  width:260px;
+  margin-bottom:25px;
 }
 
 h1{
   margin:0;
   font-size:56px;
-  line-height:1.1;
+  color:#39e600;
 }
 
-p{
-  line-height:1.6;
+.hero-sub{
+  font-size:20px;
+  margin-top:15px;
+  margin-bottom:30px;
 }
+
+/* NAV */
 
 nav{
-  background:#111111;
+  background:#000;
   padding:14px;
   text-align:center;
   position:sticky;
   top:0;
-  z-index:1000;
 }
 
 nav a{
-  color:#ffffff;
-  margin:0 15px;
+  color:white;
+  margin:0 18px;
   text-decoration:none;
   font-weight:bold;
 }
+
+/* BUTTONS */
+
+.hero-buttons{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.hero-btn{
+  background:#39e600;
+  color:#111;
+  border:none;
+  padding:14px 28px;
+  font-size:18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.hero-btn-dark{
+  background:#222;
+  color:white;
+}
+
+/* SECTIONS */
 
 section{
   max-width:1100px;
@@ -52,21 +90,11 @@ section{
   padding:70px 20px;
 }
 
-.hero-btn{
-  background:#39e600;
-  color:#111111;
-  border:none;
-  padding:14px 28px;
-  font-size:18px;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:bold;
-  transition:0.2s ease;
+.section-alt{
+  background:#f6f7f6;
 }
 
-.hero-btn:hover{
-  background:#2ecc00;
-}
+/* SERVICES */
 
 .services{
   display:grid;
@@ -75,11 +103,13 @@ section{
 }
 
 .card{
-  background:#ffffff;
+  background:white;
   padding:30px;
-  border-radius:12px;
+  border-radius:10px;
   box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
+
+/* GALLERY */
 
 .gallery{
   display:grid;
@@ -89,180 +119,204 @@ section{
 
 .gallery img{
   width:100%;
-  border-radius:12px;
-  display:block;
+  border-radius:10px;
 }
 
-.cta{
-  background:#0f3a1f;
-  color:#ffffff;
-  text-align:center;
-  padding:70px 20px;
-}
-
-footer{
-  background:#111111;
-  color:#ffffff;
-  text-align:center;
-  padding:35px;
-}
-
-.contact-box{
-  background:#ffffff;
-  padding:30px;
-  border-radius:12px;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  max-width:600px;
-}
-
-.logo-wrap{
-  margin-bottom:25px;
-}
-
-.logo-wrap img{
-  width:240px;
-  max-width:90%;
-  display:block;
-  margin:0 auto;
-}
-
-.hero-subtext{
-  font-size:20px;
-  margin-top:16px;
-  margin-bottom:30px;
-}
-
-.hero-button-row{
-  margin-top:25px;
-  display:flex;
-  gap:12px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.section-alt{
-  background:#f6f7f6;
-}
-
-.gallery-card p{
+.gallery-label{
   text-align:center;
   font-weight:bold;
   margin-top:10px;
 }
 
-@media (max-width: 768px){
-  h1{
-    font-size:40px;
-  }
+/* CTA */
 
-  .hero-subtext{
-    font-size:18px;
-  }
-
-  nav a{
-    display:inline-block;
-    margin:8px 10px;
-  }
+.cta{
+  background:#0f3a1f;
+  color:white;
+  text-align:center;
+  padding:70px 20px;
 }
+
+/* CONTACT */
+
+.contact-box{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  max-width:600px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:35px;
+}
+
 </style>
+
 </head>
+
 <body>
 
 <header>
-  <div class="logo-wrap">
-    <img src="logo.png" alt="Cougle Property Care Logo">
-  </div>
 
-  <h1>Cougle Property Care</h1>
-  <p class="hero-subtext">Professional Lawn Care & Property Maintenance in Fredericton</p>
+<img src="logo.png" class="logo" alt="Cougle Property Care Logo">
 
-  <div class="hero-button-row">
-    <a href="tel:15062929990" style="text-decoration:none;">
-      <button class="hero-btn">Call Now</button>
-    </a>
+<h1>Cougle Property Care</h1>
+<p class="hero-sub">Professional Lawn Care & Property Maintenance in Fredericton</p>
 
-    <a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote." style="text-decoration:none;">
-      <button class="hero-btn" style="background:#111111; color:#ffffff;">Text for a Quote</button>
-    </a>
-  </div>
+<div class="hero-buttons">
+
+<a href="tel:15062929990">
+<button class="hero-btn">Call Now</button>
+</a>
+
+<a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
+<button class="hero-btn hero-btn-dark">Text for a Quote</button>
+</a>
+
+</div>
+
 </header>
 
 <nav>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card"><h3>Lawn Mowing</h3><p>Reliable weekly or bi-weekly mowing services to keep your property looking clean and well maintained.</p></div>
-    <div class="card"><h3>Overseeding</h3><p>Improve lawn thickness and repair thin or damaged areas with professional overseeding.</p></div>
-    <div class="card"><h3>Fertilizer & Lime Application</h3><p>Programs focused on lawn health, stronger root systems, and improved soil conditions.</p></div>
-    <div class="card"><h3>Compost Top Dressing</h3><p>Organic soil improvement that increases moisture retention and lawn vitality.</p></div>
-    <div class="card"><h3>Spring & Fall Cleanup</h3><p>Seasonal cleanups including leaves, debris removal, and property preparation.</p></div>
-    <div class="card"><h3>Brush & Junk Removal</h3><p>Removal of yard debris, brush piles, and unwanted materials from your property.</p></div>
-    <div class="card"><h3>Tree Cleanup</h3><p>Cleanup of smaller trees, branches, and trimming work around the property.</p></div>
-  </div>
+
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Lawn Mowing</h3>
+<p>Reliable weekly or bi-weekly mowing to keep your property looking clean and well maintained.</p>
+</div>
+
+<div class="card">
+<h3>Overseeding</h3>
+<p>Improve lawn thickness and repair thin or damaged areas with professional overseeding.</p>
+</div>
+
+<div class="card">
+<h3>Fertilizer & Lime Application</h3>
+<p>Programs focused on lawn health, stronger root systems, and improved soil conditions.</p>
+</div>
+
+<div class="card">
+<h3>Compost Top Dressing</h3>
+<p>Organic soil improvement that increases moisture retention and lawn vitality.</p>
+</div>
+
+<div class="card">
+<h3>Spring & Fall Cleanup</h3>
+<p>Seasonal cleanups including leaves, debris removal, and property preparation.</p>
+</div>
+
+<div class="card">
+<h3>Brush & Junk Removal</h3>
+<p>Removal of brush, debris piles, and unwanted materials from your property.</p>
+</div>
+
+<div class="card">
+<h3>Tree Cleanup</h3>
+<p>Cleanup and trimming of smaller trees and branches around the property.</p>
+</div>
+
+</div>
+
 </section>
 
 <section id="about" class="section-alt">
-  <h2>About Cougle Property Care</h2>
-  <p>Cougle Property Care is a Fredericton-based lawn care company focused on helping homeowners maintain clean, healthy, and well-kept properties. Founded in 2022, the company has grown quickly by providing reliable service, clear communication, and visible results.</p>
 
-  <p>Our team focuses heavily on lawn health services such as overseeding, fertilization, liming, and compost top dressing to help properties look better and stay healthier throughout the season. Whether it's weekly mowing, seasonal cleanups, or improving lawn health, our goal is to deliver professional service that homeowners can depend on.</p>
+<h2>About Cougle Property Care</h2>
 
-  <p>We proudly serve Fredericton and surrounding communities.</p>
+<p>
+Cougle Property Care is a Fredericton-based lawn care company focused on helping homeowners maintain clean, healthy, and well-kept properties. Founded in 2022, the company has grown quickly by providing reliable service, clear communication, and visible results.
+</p>
+
+<p>
+Our team focuses heavily on lawn health services such as overseeding, fertilization, liming, and compost top dressing to help properties look better and stay healthier throughout the season. Whether it's weekly mowing, seasonal cleanups, or improving lawn health, our goal is to deliver professional service that homeowners can depend on.
+</p>
+
+<p>
+We proudly serve Fredericton and surrounding communities.
+</p>
+
 </section>
 
 <section id="gallery">
-  <h2>Recent Work</h2>
-  <div class="gallery">
-    <div class="gallery-card">
-      <img src="before.jpg" alt="Overgrown property before cleanup">
-      <p>Before</p>
-    </div>
 
-    <div class="gallery-card">
-      <img src="after.jpg" alt="Property after cleanup">
-      <p>After</p>
-    </div>
+<h2>Recent Work</h2>
 
-    <div class="gallery-card">
-      <img src="lawn.jpg" alt="Freshly cut lawn">
-      <p>Finished Lawn</p>
-    </div>
-  </div>
+<div class="gallery">
+
+<div>
+<img src="before.jpg">
+<p class="gallery-label">Before</p>
+</div>
+
+<div>
+<img src="after.jpg">
+<p class="gallery-label">After</p>
+</div>
+
+<div>
+<img src="lawn.jpg">
+<p class="gallery-label">Finished Lawn</p>
+</div>
+
+</div>
+
 </section>
 
 <div class="cta">
-  <h2>Get a Quote Today</h2>
-  <p>Call or text us with your address and the service you're looking for.</p>
 
-  <div class="hero-button-row">
-    <a href="tel:15062929990" style="text-decoration:none;">
-      <button class="hero-btn">Call Now</button>
-    </a>
+<h2>Get a Quote Today</h2>
+<p>Call or text us with your address and the service you're looking for.</p>
 
-    <a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote." style="text-decoration:none;">
-      <button class="hero-btn" style="background:#111111; color:#ffffff;">Text for a Quote</button>
-    </a>
-  </div>
+<div class="hero-buttons">
+
+<a href="tel:15062929990">
+<button class="hero-btn">Call Now</button>
+</a>
+
+<a href="sms:15062929990?body=Hi%20Cougle%20Property%20Care,%20I%E2%80%99d%20like%20a%20quote.">
+<button class="hero-btn hero-btn-dark">Text for a Quote</button>
+</a>
+
+</div>
+
 </div>
 
 <section id="contact" class="section-alt">
-  <h2>Contact</h2>
-  <div class="contact-box">
-    <p><strong>Phone:</strong> (506) 292-9990</p>
-    <p><strong>Email:</strong> Couglepropertycare@gmail.com</p>
-    <p><strong>Service Area:</strong> Fredericton and surrounding areas</p>
-    <p>Text us your address and a short description of the work for a fast quote.</p>
-  </div>
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+<p><strong>Phone:</strong> (506) 292-9990</p>
+<p><strong>Email:</strong> Couglepropertycare@gmail.com</p>
+<p><strong>Service Area:</strong> Fredericton and surrounding areas</p>
+
+<p>
+Text us your address and a short description of the work for a fast quote.
+</p>
+
+</div>
+
 </section>
 
 <footer>
-  <p>© Cougle Property Care 2026</p>
+<p>© Cougle Property Care 2026</p>
 </footer>
 
 </body>
